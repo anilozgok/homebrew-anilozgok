@@ -7,12 +7,9 @@ class Exchange < Formula
   
   def install
     bin.install "exchange-cli-example"
-    File.open("/ascii-art.txt").each do |line|
-      puts line
-    end
   end
 
-  test do
-    system "#{bin}/exchange-cli-example"
+  def post_install
+    File.open("ascii-art.txt").each { |line| puts line }
   end
 end
