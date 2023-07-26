@@ -7,7 +7,7 @@ class Exchange < Formula
   
   def install
     bin.install "exchange-cli-example"
-    File.open("ascii-art.txt").each do |line|
+    File.open("/ascii-art.txt").each do |line|
       puts line
     end
   end
