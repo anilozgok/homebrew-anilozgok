@@ -10,6 +10,6 @@ class Exchange < Formula
   end
 
   def post_install
-    File.open("ascii-art.txt").each { |line| puts line }
+    File.open("/ascii-art.txt").each { |line| puts line }
   end
 end
