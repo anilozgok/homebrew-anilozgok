@@ -9,7 +9,7 @@ class Exchange < Formula
     bin.install "exchange-cli-example"
   end
   def post_install
-    puts `
+    puts '
 
                   __                                      ___ 
   ___  _  _______/ /_  ____ _____  ____ ____        _____/ (_)
@@ -18,5 +18,5 @@ class Exchange < Formula
 \___/_/|_|\___/_/ /_/\__,_/_/ /_/\__, /\___/      \___/_/_/   
                                 /____/                        
    
-    `
+    '
 end
