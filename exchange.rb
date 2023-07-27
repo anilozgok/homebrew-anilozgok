@@ -8,6 +8,7 @@ class Exchange < Formula
   def install
     bin.install "exchange-cli-example"
   end
+  
   def post_install
     puts '
 
@@ -19,4 +20,5 @@ class Exchange < Formula
                                 /____/                        
    
     '
+  end
 end
